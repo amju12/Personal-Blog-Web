@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMJAD'S BLOG</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #h{
+      color: purple;
+      font-weight: 1000;
+    }
+    #contact{margin-top: -60px; /* Adjust the top margin */
+      margin-bottom: 200px; /* Adjust the bottom margin */
+      margin-left: 0px; /* Align to the right */
+      margin-right: auto; /* Align to the left */
+      width: auto; /* Adjust the width of the container */
+      max-width: 100%;
+
+    }
+    /* Add custom styles for positioning the form container */
+    .form-container {
+      margin-top: 20px; /* Adjust the top margin */
+      margin-bottom: 50px; /* Adjust the bottom margin */
+      margin-left: 0px; /* Align to the right */
+      margin-right: 400px; /* Align to the left */
+      width: 60%; /* Adjust the width of the container */
+      max-width: 800px; /* Set maximum width to prevent stretching */
+      background-color: #1a1e21; 
+    }
+    #form{
+      padding-left: 10%;
+    }
+  </style>
+</head>
+<body>
+  <button id="menu-button">Menu</button>
+
+  <div class="background1" id="home">
+    <div class="centered-content">
+      <div class="text-container">
+        <span id="text"></span>
+        <span id="cursor">|</span>
+      </div>
+    </div>
+    <span id="tex"> ＩＭ Ｂ.ＴＥＣＨ ＧＲＡＤＵＡＴＥ,ＣＩＣＳＡ ＳＴＵＤＥＮＴ,ＣＴＦ ＰＬＡＹＥＲ</span>
+    <div class="side-menu" id="menu">
+      
+      <script src="sidemenu.js"></script>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <br>
+        <li><a href="#about">About</a></li>
+        <br>
+        <li><a href="#">Blog</a></li>
+        <br>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="About" id="about" style="margin-top: -50px;">
+    <script src="about.js"></script>
+    <p id="abf" class="about-text"> 
+      I'm an avid cybersecurity enthusiast holding a Bachelor's degree in Computer science Engineering. along with multiple industry certifications, including Certified Ethical Hacker (CEH),SOC analyst, among others. My passion lies in ensuring the security of web application, safeguarding them from potential threats. Presently, I'm pursuing cybersecurity course at RedTeam Hacker Academy
+    </p>
+    <a href="AMJAD C AZAD RESUME.pdf" download><button id="res-button">RESUME</button></a>
+  </div>
+  
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const aboutLink = document.querySelector(".side-menu a[href='#about']");
+      const aboutSection = document.getElementById("about");
+
+      aboutLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const aboutLink = document.querySelector(".side-menu a[href='#home']");
+      const aboutSection = document.getElementById("home");
+
+      aboutLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const aboutLink = document.querySelector(".side-menu a[href='#contact']");
+      const aboutSection = document.getElementById("contact");
+
+      aboutLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+  <div id="contact" style="display: flex; justify-content: space-around; align-items: center; padding: 50px 0;margin-top: 0; background-color: #17202A
+  ;">
+    <div style="text-align: center; color: #fff; margin-top: 10px; padding-left: 5%;" >
+      <h1 id="h" >GET IN TOUCH</h1>
+      <br>
+      <h1>AMJAD C AZAD</h1>
+      <h1>SULTHAN BATHERY</h1>
+      <h1>WAYANAD</h1>
+      <h1>KERALA</h1>
+      <h2>PHONE: 7909149861</h2>
+    </div>
+   <div class="form-container" style="background-color: #17202A; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); width: 50%; margin: 0 auto; font-family: 'Valorant', Arial, sans-serif; margin-left: 3%; margin-top: -30px;">
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain" id="form">
+        <label for="name" style="color: #fff;">Your Name:</label><br>
+        <input type="text" id="name" name="name" required style="padding: 8px; border-radius: 5px; border: 1px solid #fff; background-color: transparent; color: #fff; width: 50%; margin-bottom: 10px;"><br>
+        <label for="email" style="color: #fff;">Your Email:</label><br>
+        <input type="email" id="email" name="email" required style="padding: 8px; border-radius: 5px; border: 1px solid #fff; background-color: transparent; color: #fff; width: 50%; margin-bottom: 10px;"><br>
+        <label for="message" style="color: #fff;">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" required style="padding: 8px; border-radius: 5px; border: 1px solid #fff; background-color: transparent; color: #fff; width: 50%; margin-bottom: 10px;"></textarea><br>
+        <input type="submit" value="Send" style="padding: 8px 20px; border: none; border-radius: 5px; background-color: #2d9cdb; color: #fff; cursor: pointer; width: 50%;">
+      </form>
+    </div>
+    
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</body>
+</html>

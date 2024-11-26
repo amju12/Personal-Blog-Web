@@ -1,0 +1,301 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('side-view-male-hacker-with-gloves-laptop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1; 
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container {
+  color: cyan;
+  position: relative;
+  display: inline-block;
+  font-family: 'Valorant', Arial, sans-serif;
+  font-size: 40px;
+  padding-right: 10px; 
+  border: 1px solid transparent; /* Add border for visibility */
+  min-height: 24px; /* Set minimum height for the text container */
+}
+
+#text {
+
+  color: whitesmoke; /* Set text color to transparent */
+  text-shadow: 1 0 2px cyan; /* Add white glow effect */
+  animation: glow 1s ease-in-out infinite alternate; /* Glow animation */
+}
+
+/*@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; /* Increase glow 
+  }
+  100% {
+    text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white; /* Increase glow 
+  }
+}*/
+
+#cursor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: white; 
+  animation: blink 0.7s infinite alternate; 
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.background1 {
+  position: relative;
+  z-index: 1; 
+}
+
+.social-links {
+  padding-top: 500px;
+  text-align: center;
+  position: relative;
+  z-index: 2; 
+ 
+}
+.social-links img {
+  width: 41px; /* Adjust the width of the logos */
+  height: auto; /* Maintain aspect ratio */
+  align-items: center;
+}
+
+#menu-button {
+  padding-left: 50%;
+
+}.side-menu {
+  position: fixed;
+  top: 0;
+  left: -200px; /* Initially hidden */
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s; /* Smooth transition when appearing/disappearing */
+}
+
+.side-menu.visible {
+  left: 0px; /* Show the side menu */
+}
+.side-menu {
+  font-family: 'Valorant', Arial, sans-serif; /* Use Valorant font as fallback */
+  position: fixed;
+  top: 0;
+  left: -200px; /* Initially hidden */
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s; /* Smooth transition when appearing/disappearing */
+}
+
+#menu-button {
+
+  
+  padding: 10px 20px;
+  
+  background-color: #2d9cdb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Valorant', Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#menu-button:hover {
+  background-color: #2577a1;
+}
+#menu-button {
+  position: fixed;
+  top: 3px;
+  left: 200px;
+  z-index: 1000; /* Set a high z-index value */
+}
+
+.About{
+background-image: url(3047867.jpg);
+  
+background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+#tex {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+ 
+  
+  color: white; /* Set the text color */
+  font-size: 20px; /* Adjust the font size */
+  text-align: center; /* Center the text horizontally */
+}
+#abf{
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 18%;
+  padding-left: 40%;
+  font-size: 30px;
+}
+#res-button{
+   
+  padding: 10px 20px;
+ position: relative;
+  left: 60%;
+  top: 8%;
+  
+  
+  background-color: #3f05de;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Valorant', Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#res-button:hover {
+  background-color: #2577a1; /* Change button background color on hover */
+}
+h1{
+  font-weight: 70;
+  font-size: 25px;
+  padding-left: 8%;
+  color: whitesmoke;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+#Contact {
+  background-color:#e0e0e0; 
+}
+h2{
+  font-weight: 70;
+  font-family:'Valorant', Arial, sans-serif;
+  padding-left: 8%;
+}
+.container {
+  display: flex;
+}
+
+#Contact {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.form-container {
+  flex: 1;
+  padding-right: 50px;
+  padding-top: 30px;
+  
+
+
+}
+.about-text {
+  opacity: 0; /* Initially hide the text */
+  transform: translateX(150px); /* Move the text to the right */
+  transition: opacity 0.5s ease, transform 2s ease; /* Add transition for smooth animation */
+}
+
+.about-text.visible {
+  opacity: 1; /* Show the text */
+  transform: translateX(0); /* Move the text to its original position */
+}
+.menu-open {
+  overflow: hidden; /* Hide scrollbar when menu is open */
+  width: calc(100% - 200px); /* Adjust body width to accommodate the menu */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body.menu-open {
+  padding-right: 240px; /* Adjust the padding based on your side menu width */
+}
+
+.side-menu.visible {
+  transform: translateX(0);
+}
+
